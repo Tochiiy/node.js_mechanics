@@ -1,0 +1,21 @@
+{
+  "name": "node.js_mechanics",
+  "version": "1.0.0",
+  "description": "Runnable notes on Node.js internals: event loop, libuv, V8, thread pool, worker threads and child processes.",
+  "private": true,
+  "scripts": {
+    "01": "node 01-event-loop-order/execution-order.js",
+    "02": "node 02-libuv-thread-pool/pbkdf2-pool.js",
+    "02:pool1": "node 02-libuv-thread-pool/pbkdf2-pool.js 1",
+    "02:pool4": "node 02-libuv-thread-pool/pbkdf2-pool.js 4",
+    "02:pool8": "node 02-libuv-thread-pool/pbkdf2-pool.js 8",
+    "03": "node 03-perf-hooks/event-delay.js",
+    "04": "node 04-worker-threads/server.js",
+    "05": "node 05-child-processes/exec.js",
+    "06": "node 05-child-processes/spawn.js",
+    "07": "node 05-child-processes/fork-parent.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  }
+}
